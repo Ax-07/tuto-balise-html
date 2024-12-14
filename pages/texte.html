@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/icon_emoji.svg" />
     <title>Balises de texte en HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -31,13 +34,15 @@
             <article>
                 <h3>Exemple :</h3>
                 <pre>
-                    &lt;h1&gt;Titre de niveau 1&lt;/h1&gt;
-                    &lt;h2&gt;Titre de niveau 2&lt;/h2&gt;
-                    &lt;h3&gt;Titre de niveau 3&lt;/h3&gt;
-                    &lt;h4&gt;Titre de niveau 4&lt;/h4&gt;
-                    &lt;h5&gt;Titre de niveau 5&lt;/h5&gt;
-                    &lt;h6&gt;Titre de niveau 6&lt;/h6&gt;
-                </pre>
+                    <code class="language-html">
+&lt;h1&gt;Titre de niveau 1&lt;/h1&gt;
+&lt;h2&gt;Titre de niveau 2&lt;/h2&gt;
+&lt;h3&gt;Titre de niveau 3&lt;/h3&gt;
+&lt;h4&gt;Titre de niveau 4&lt;/h4&gt;
+&lt;h5&gt;Titre de niveau 5&lt;/h5&gt;
+&lt;h6&gt;Titre de niveau 6&lt;/h6&gt;
+                  </code>
+                </pre>  
             </article>
 
             <p>👉 **Bonnes pratiques** :
@@ -56,8 +61,10 @@
             <article>
                 <h3>Exemple :</h3>
                 <pre>
-                    &lt;p&gt;Ceci est un paragraphe de texte.&lt;/p&gt;
-                    &lt;p&gt;Et ceci est un autre paragraphe.&lt;/p&gt;
+                    <code class="language-html">
+&lt;p&gt;Ceci est un paragraphe de texte.&lt;/p&gt;
+&lt;p&gt;Et ceci est un autre paragraphe.&lt;/p&gt;
+                    </code>
                 </pre>
             </article>
 
@@ -88,10 +95,12 @@
             <article>
                 <h3>Exemple :</h3>
                 <pre>
-                    &lt;p&gt;Texte en &lt;strong&gt;gras&lt;/strong&gt;.&lt;/p&gt;
-                    &lt;p&gt;Texte en &lt;em&gt;italique&lt;/em&gt;.&lt;/p&gt;
-                    &lt;p&gt;Texte en &lt;b&gt;gras (non sémantique)&lt;/b&gt;.&lt;/p&gt;
-                    &lt;p&gt;Texte en &lt;u&gt;souligné&lt;/u&gt;.&lt;/p&gt;
+                    <code class="language-html">
+&lt;p&gt;Texte en &lt;strong&gt;gras&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Texte en &lt;em&gt;italique&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Texte en &lt;b&gt;gras (non sémantique)&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;Texte en &lt;u&gt;souligné&lt;/u&gt;.&lt;/p&gt;
+                    </code>
                 </pre>
             </article>
         </section>
@@ -105,10 +114,12 @@
                 <p>Utilisez la balise **`&lt;blockquote&gt;`** pour citer des paragraphes entiers.</p>
 
                 <pre>
-                    &lt;blockquote&gt;
-                    Le HTML est le langage de base pour créer des pages Web. 
-                    Il est utilisé pour structurer le contenu.
-                    &lt;/blockquote&gt;
+                    <code class="language-html">
+&lt;blockquote&gt;
+Le HTML est le langage de base pour créer des pages Web. 
+Il est utilisé pour structurer le contenu.
+&lt;/blockquote&gt;
+                    </code>
                 </pre>
             </article>
 
@@ -117,7 +128,9 @@
                 <p>Utilisez la balise **`&lt;q&gt;`** pour citer une petite phrase au sein d'un paragraphe.</p>
 
                 <pre>
-                    &lt;p&gt;Le professeur a dit : &lt;q&gt;N'abandonnez jamais !&lt;/q&gt;&lt;/p&gt;
+                    <code class="language-html">
+&lt;p&gt;Le professeur a dit : &lt;q&gt;N'abandonnez jamais !&lt;/q&gt;&lt;/p&gt;
+                    </code>
                 </pre>
             </article>
         </section>
@@ -145,13 +158,18 @@
                 <li>📌 Les **citations** utilisent **`&lt;blockquote&gt;`** pour des longs paragraphes et **`&lt;q&gt;`** pour les petites citations.</li>
             </ul>
         </section>
-        <a href="#top">
-            <button id="backToTop">
-                🔝 Retour en haut
+        <a href="/pages/liens.html">
+            <button id="nextPage">
+                Suivant : Les liens en HTML
             </button>
         </a>
     </main>
-
+    
+    <a href="#top">
+        <button id="backToTop">
+            🔝 Retour en haut
+        </button>
+    </a>
     <!-- Pied de page -->
     <footer>
         <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
