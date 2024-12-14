@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/icon_emoji.svg" />
     <title>Les formulaires en HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/formulaires.css">
 </head>
@@ -30,10 +33,12 @@
             <p>Un formulaire HTML est défini par la balise **`&lt;form&gt;`**. Voici sa structure de base :</p>
 
             <pre>
+                <code class="language-html">
 &lt;form action="url_du_serveur" method="post"&gt;
   &lt;!-- Champs de formulaire ici --&gt;
   &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
 &lt;/form&gt;
+                </code>
             </pre>
 
             <ul>
@@ -49,8 +54,10 @@
             <article>
                 <h3>1. Champ de texte (`&lt;input type="text"&gt;`)</h3>
                 <pre>
+                    <code class="language-html">
 &lt;label for="nom"&gt;Nom :&lt;/label&gt;
 &lt;input type="text" id="nom" name="nom" placeholder="Entrez votre nom"&gt;
+                    </code>
                 </pre>
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
@@ -58,6 +65,7 @@
 
             <article>
                 <h3>2. Champ de mot de passe (`&lt;input type="password"&gt;`)</h3>
+                
                 <pre>
 &lt;label for="motdepasse"&gt;Mot de passe :&lt;/label&gt;
 &lt;input type="password" id="motdepasse" name="motdepasse"&gt;
@@ -277,14 +285,18 @@
                 <li>📌 **Formulaire de paiement** : Permet de collecter des informations de carte bancaire.</li>
             </ul>
         </section>
-        <a href="#top">
-            <button id="backToTop">
-                🔝 Retour en haut
+        <a href="/components/liste-composant.html">
+            <button id="nextPage">
+                Suivant : Les composants d'une page web
             </button>
-        </a>
-
+        </a>        
     </main>
-
+    
+    <a href="#top">
+        <button id="backToTop">
+            🔝 Retour en haut
+        </button>
+    </a>
     <!-- Pied de page -->
     <footer>
         <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
