@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires en HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/formulaires.css">
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Les formulaires en HTML</h1>
+        <nav><a href="../index.html">🏠 Accueil</a></nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Les **formulaires HTML** permettent de collecter des informations auprès des utilisateurs. Les données saisies peuvent être envoyées à un serveur pour être traitées. Dans ce chapitre, vous apprendrez à créer et personnaliser un formulaire HTML.</p>
+        </section>
+
+        <!-- Structure de base d'un formulaire -->
+        <section>
+            <h2>1️⃣ Structure de base d'un formulaire</h2>
+            <p>Un formulaire HTML est défini par la balise **`&lt;form&gt;`**. Voici sa structure de base :</p>
+
+            <pre>
+&lt;form action="url_du_serveur" method="post"&gt;
+  &lt;!-- Champs de formulaire ici --&gt;
+  &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+
+            <ul>
+                <li>🔹 **`action`** : URL vers laquelle les données du formulaire sont envoyées.</li>
+                <li>🔹 **`method="post"`** ou **`method="get"`** : Méthode de soumission (POST ou GET).</li>
+            </ul>
+        </section>
+
+        <!-- Les champs de formulaire -->
+        <section>
+            <h2>2️⃣ Les champs de formulaire</h2>
+
+            <article>
+                <h3>1. Champ de texte (`&lt;input type="text"&gt;`)</h3>
+                <pre>
+&lt;label for="nom"&gt;Nom :&lt;/label&gt;
+&lt;input type="text" id="nom" name="nom" placeholder="Entrez votre nom"&gt;
+                </pre>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+            </article>
+
+            <article>
+                <h3>2. Champ de mot de passe (`&lt;input type="password"&gt;`)</h3>
+                <pre>
+&lt;label for="motdepasse"&gt;Mot de passe :&lt;/label&gt;
+&lt;input type="password" id="motdepasse" name="motdepasse"&gt;
+                </pre>
+                <label for="motdepasse">Mot de passe :</label>
+                <input type="password" id="motdepasse" name="motdepasse">
+            </article>
+
+            <article>
+                <h3>3. Champ de saisie d'e-mail (`&lt;input type="email"&gt;`)</h3>
+                <pre>
+&lt;label for="email"&gt;Email :&lt;/label&gt;
+&lt;input type="email" id="email" name="email" placeholder="Entrez votre email"&gt;
+                </pre>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email">
+            </article>
+
+            <article>
+                <h3>4. Zone de texte (`&lt;textarea&gt;`)</h3>
+                <pre>
+&lt;label for="message"&gt;Message :&lt;/label&gt;
+&lt;textarea id="message" name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+                </pre>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            </article>
+
+            <article>
+                <h3>5. Bouton de soumission (`&lt;button&gt;`)</h3>
+                <pre>
+&lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+                </pre>
+                <button type="submit">Envoyer</button>
+            </article>
+        </section>
+
+        <!-- Autres champs de formulaire -->
+        <section>
+            <h2>3️⃣ Autres champs de formulaire</h2>
+
+            <article>
+                <h3>1. Boutons radio (`&lt;input type="radio"&gt;`)</h3>
+                <pre>
+&lt;input type="radio" name="genre" value="homme"&gt; Homme
+&lt;input type="radio" name="genre" value="femme"&gt; Femme
+                </pre>
+                <input type="radio" name="genre" value="homme"> Homme
+                <input type="radio" name="genre" value="femme"> Femme
+            </article>
+
+            <article>
+                <h3>2. Cases à cocher (`&lt;input type="checkbox"&gt;`)</h3>
+                <pre>
+&lt;input type="checkbox" name="abonnement" value="newsletter"&gt; S'abonner à la newsletter
+                </pre>
+                <input type="checkbox" name="abonnement" value="newsletter"> S'abonner à la newsletter
+            </article>
+
+            <article>
+                <h3>3. Listes déroulantes (`&lt;select&gt;`)</h3>
+                <pre>
+&lt;select name="pays"&gt;
+  &lt;option value="france"&gt;France&lt;/option&gt;
+  &lt;option value="espagne"&gt;Espagne&lt;/option&gt;
+  &lt;option value="italie"&gt;Italie&lt;/option&gt;
+&lt;/select&gt;
+                </pre>
+                <select name="pays">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                </select>
+            </article>
+        </section>
+
+        <!-- Exercice pratique -->
+        <section>
+            <h2>4️⃣ Exercice pratique</h2>
+            <p>Créez une nouvelle page **formulaires.html** avec les consignes suivantes :</p>
+            <ul>
+                <li>1️⃣ Créez un formulaire complet avec les champs suivants :</li>
+                <li>🔹 **Nom** (input texte)</li>
+                <li>🔹 **Email** (input email)</li>
+                <li>🔹 **Mot de passe** (input password)</li>
+                <li>🔹 **Genre** (boutons radio : Homme, Femme, Autre)</li>
+                <li>🔹 **Choix du pays** (liste déroulante avec 3 pays)</li>
+                <li>🔹 **Zone de message** (textarea)</li>
+                <li>🔹 **Case à cocher** pour accepter les **conditions d'utilisation**.</li>
+            </ul>
+            <p>➡️ Ouvrez la page dans le navigateur et vérifiez le résultat !</p>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>5️⃣ Points à retenir</h2>
+            <ul>
+                <li>📌 La balise **`&lt;form&gt;`** permet de créer un formulaire.</li>
+                <li>📌 Les champs de saisie incluent **`&lt;input&gt;`**, **`&lt;textarea&gt;`**, **`&lt;select&gt;`**, etc.</li>
+                <li>📌 N'oubliez pas d'ajouter des **labels** pour chaque champ de saisie.</li>
+                <li>📌 Les types d'input incluent **text**, **password**, **email**, **radio**, **checkbox**, etc.</li>
+                <li>📌 Les formulaires peuvent utiliser les méthodes **GET** et **POST**.</li>
+            </ul>
+        </section>
+        <!-- Exemples de formulaires -->
+        <section>
+            <h2>6️⃣ Exemples de formulaires</h2>
+            <p>Voici quelques exemples de formulaires couramment utilisés sur les sites web :</p>
+            <ul>
+                <li>🔹 **Formulaire de contact**</li>
+                <li>🔹 **Formulaire de connexion**</li>
+                <li>🔹 **Formulaire d'inscription**</li>
+                <li>🔹 **Formulaire de recherche**</li>
+                <li>🔹 **Formulaire de paiement**</li>
+            </ul>
+        </section>
+        <!-- Formulaire de Contact -->
+        <section>
+            <h2>Formulaire de contact</h2>
+            <p>Ce formulaire est utilisé pour permettre aux visiteurs de **vous contacter**. Il inclut généralement les champs **Nom**, **Email**, **Message**, et un **bouton Envoyer**.</p>
+
+            <form action="/contact" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" placeholder="Entrez votre message ici"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Formulaire de connexion -->
+        <section>
+            <h2>Formulaire de connexion</h2>
+            <p>Le **formulaire de connexion** est utilisé pour permettre aux utilisateurs de se connecter à leur compte. Il inclut **Email**, **Mot de passe** et un **bouton de connexion**.</p>
+
+            <form action="/login" method="post">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+
+                <button type="submit">Se connecter</button>
+            </form>
+        </section>
+
+        <!-- Formulaire d'inscription -->
+        <section>
+            <h2>Formulaire d'inscription</h2>
+            <p>Le **formulaire d'inscription** est utilisé pour enregistrer de nouveaux utilisateurs sur le site. Il inclut les champs **Nom**, **Email**, **Mot de passe**, **Confirmation du mot de passe** et un **bouton d'inscription**.</p>
+
+            <form action="/register" method="post">
+                <label for="full_name">Nom complet :</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Entrez votre nom complet" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+
+                <label for="confirm_password">Confirmez le mot de passe :</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmez votre mot de passe" required>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+
+        <!-- Formulaire de recherche -->
+        <section>
+            <h2>Formulaire de recherche</h2>
+            <p>Le **formulaire de recherche** est utilisé pour rechercher des informations sur un site. Ce formulaire est souvent simple et comprend un **champ de recherche** et un **bouton de recherche**.</p>
+
+            <form action="/search" method="get">
+                <label for="search">Recherchez ici :</label>
+                <input type="text" id="search" name="query" placeholder="Recherchez..." required>
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <!-- Formulaire de paiement -->
+        <section>
+            <h2>Formulaire de paiement</h2>
+            <p>Le **formulaire de paiement** permet de collecter les **informations de paiement**. Il inclut des champs pour le **nom**, le **numéro de carte de crédit**, la **date d'expiration** et le **CVC**.</p>
+
+            <form action="/payment" method="post">
+                <label for="card_name">Nom sur la carte :</label>
+                <input type="text" id="card_name" name="card_name" placeholder="Nom sur la carte" required>
+
+                <label for="card_number">Numéro de carte :</label>
+                <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9123 4567" required>
+
+                <label for="expiry_date">Date d'expiration :</label>
+                <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/AA" required>
+
+                <label for="cvc">Code CVC :</label>
+                <input type="text" id="cvc" name="cvc" placeholder="123" required>
+
+                <button type="submit">Payer</button>
+            </form>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>Points à retenir</h2>
+            <ul>
+                <li>📌 **Formulaire de contact** : Permet à l'utilisateur de vous envoyer un message.</li>
+                <li>📌 **Formulaire de connexion** : Permet aux utilisateurs de se connecter à un compte.</li>
+                <li>📌 **Formulaire d'inscription** : Permet aux utilisateurs de créer un nouveau compte.</li>
+                <li>📌 **Formulaire de recherche** : Permet de rechercher des informations sur le site.</li>
+                <li>📌 **Formulaire de paiement** : Permet de collecter des informations de carte bancaire.</li>
+            </ul>
+        </section>
+        <a href="#top">
+            <button id="backToTop">
+                🔝 Retour en haut
+            </button>
+        </a>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

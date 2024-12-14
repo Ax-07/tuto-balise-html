@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les liens en HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Les liens en HTML</h1>
+        <nav><a href="../index.html">🏠 Accueil</a></nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Les **liens hypertextes** sont au cœur du web. Ils permettent de relier des pages entre elles ou de pointer vers d'autres ressources (fichiers, vidéos, etc.). La balise HTML utilisée pour créer un lien est **`<a>`**.</p>
+        </section>
+
+        <!-- Les bases des liens -->
+        <section>
+            <h2>1️⃣ Structure de la balise de lien</h2>
+            <p>La balise **`&lt;a&gt;`** (pour "anchor", ancre en anglais) permet de créer un lien cliquable. Elle utilise l'attribut **`href`** pour indiquer l'URL de la page ou de la ressource à atteindre.</p>
+
+            <article>
+                <h3>Exemple simple</h3>
+                <pre>
+                    &lt;a href="https://www.google.com"&gt;Visiter Google&lt;/a&gt;
+                </pre>
+
+                <p>👉 Ce lien envoie l'utilisateur sur **Google** en cliquant dessus.</p>
+            </article>
+
+            <article>
+                <h3>Structure complète</h3>
+                <p>Voici la structure d'une balise de lien complète :</p>
+                <pre>
+                    &lt;a href="URL" target="_blank"&gt;Texte du lien&lt;/a&gt;
+                </pre>
+
+                <ul>
+                    <li>🔹 **`href="URL"`** : Lien vers la ressource (autre page, document, etc.).</li>
+                    <li>🔹 **`target="_blank"`** : Ouvre le lien dans un **nouvel onglet**.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Liens internes et externes -->
+        <section>
+            <h2>2️⃣ Liens internes et externes</h2>
+
+            <article>
+                <h3>Liens internes</h3>
+                <p>Un **lien interne** pointe vers une autre page du **même site web**.</p>
+                <pre>
+                    &lt;a href="contact.html"&gt;Page de contact&lt;/a&gt;
+                </pre>
+                <p>👉 Ce lien envoie l'utilisateur sur la page **contact.html** qui se trouve dans le même répertoire que la page actuelle.</p>
+            </article>
+
+            <article>
+                <h3>Liens externes</h3>
+                <p>Un **lien externe** pointe vers une ressource extérieure au site, comme un autre site web.</p>
+                <pre>
+                    &lt;a href="https://www.wikipedia.org" target="_blank"&gt;Visiter Wikipedia&lt;/a&gt;
+                </pre>
+                <p>👉 Ce lien ouvre **Wikipedia** dans un **nouvel onglet** grâce à l'attribut **target="_blank"**.</p>
+            </article>
+        </section>
+
+        <!-- Liens d'ancrage -->
+        <section>
+            <h2>3️⃣ Liens d'ancrage (navigation vers une section de la même page)</h2>
+
+            <p>Un **lien d'ancrage** permet de faire défiler la page vers une **section spécifique**. On utilise un **ID** sur l'élément cible et un lien de ce type :</p>
+            <pre>
+                &lt;a href="#section2"&gt;Aller à la section 2&lt;/a&gt;
+            </pre>
+
+            <p>Pour que ce lien fonctionne, la section cible doit avoir un **ID** correspondant :</p>
+            <pre>
+                &lt;section id="section2"&gt;
+                &lt;h2&gt;Section 2&lt;/h2&gt;
+                &lt;/section&gt;
+            </pre>
+
+            <p>👉 En cliquant sur le lien, la page défilera automatiquement jusqu'à la section portant l'ID **section2**.</p>
+        </section>
+
+        <!-- Autres types de liens -->
+        <section>
+            <h2>4️⃣ Autres types de liens</h2>
+
+            <article>
+                <h3>Liens vers un e-mail (mailto:)</h3>
+                <p>Il est possible de créer des liens qui ouvrent un logiciel de messagerie pour envoyer un e-mail.</p>
+                <pre>
+                    &lt;a href="mailto:contact@example.com"&gt;Envoyer un email&lt;/a&gt;
+                </pre>
+                <p>👉 En cliquant sur ce lien, le client de messagerie par défaut s'ouvre avec l'adresse e-mail préremplie.</p>
+            </article>
+
+            <article>
+                <h3>Liens vers un fichier à télécharger</h3>
+                <p>Pour forcer le **téléchargement d'un fichier**, on utilise l'attribut **download** :</p>
+                <pre>
+                    &lt;a href="fichiers/monfichier.pdf" download&gt;Télécharger le fichier PDF&lt;/a&gt;
+                </pre>
+                <p>👉 En cliquant sur ce lien, le fichier PDF est téléchargé au lieu d'être affiché dans le navigateur.</p>
+            </article>
+        </section>
+
+        <!-- Bonnes pratiques -->
+        <section>
+            <h2>5️⃣ Bonnes pratiques</h2>
+            <ul>
+                <li>🔹 Utilisez **des descriptions claires** dans le texte du lien (évitez "cliquez ici").</li>
+                <li>🔹 Ajoutez **target="_blank"** pour les **liens externes**.</li>
+                <li>🔹 Évitez d'utiliser des **liens cassés** (vérifiez vos URL).</li>
+            </ul>
+        </section>
+
+        <!-- Exercice pratique -->
+        <section>
+            <h2>6️⃣ Exercice pratique</h2>
+            <p>Créez une nouvelle page **liens.html** avec les consignes suivantes :</p>
+            <ul>
+                <li>1️⃣ Ajoutez un **lien interne** vers une page **contact.html**.</li>
+                <li>2️⃣ Ajoutez un **lien externe** vers **Google** qui s'ouvre dans un nouvel onglet.</li>
+                <li>3️⃣ Ajoutez un **lien d'ancrage** vers une section de la page portant l'ID **#about**.</li>
+                <li>4️⃣ Ajoutez un **lien vers un e-mail** (par exemple : contact@example.com).</li>
+            </ul>
+            <p>➡️ Ouvrez la page dans le navigateur et testez les liens.</p>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>7️⃣ Points à retenir</h2>
+            <ul>
+                <li>📌 La balise **`&lt;a&gt;`** est utilisée pour créer des **liens cliquables**.</li>
+                <li>📌 Utilisez **`href`** pour spécifier l'URL et **`target="_blank"`** pour ouvrir un nouvel onglet.</li>
+                <li>📌 Les **liens internes** pointent vers des pages de votre propre site.</li>
+                <li>📌 Les **liens d'ancrage** permettent de naviguer vers une section de la page.</li>
+            </ul>
+        </section>
+        <a href="#top">
+            <button id="backToTop">
+                🔝 Retour en haut
+            </button>
+        </a>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

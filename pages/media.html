@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les médias en HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Les médias en HTML</h1>
+        <nav><a href="../index.html">🏠 Accueil</a></nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Les **médias HTML** permettent d'intégrer des **images**, des **fichiers audio** et des **vidéos** dans une page web. Ce sont des éléments essentiels pour rendre une page plus dynamique et interactive.</p>
+        </section>
+
+        <!-- Images -->
+        <section>
+            <h2>1️⃣ Les images (balise <code>&lt;img&gt;</code>)</h2>
+            <p>La balise **`&lt;img&gt;`** permet d'afficher des **images** sur une page web. Elle utilise des attributs pour contrôler l'apparence et l'accessibilité de l'image.</p>
+
+            <article>
+                <h3>Structure de la balise</h3>
+                <pre>
+&lt;img src="URL" alt="Description de l'image" width="200" height="150"&gt;
+                </pre>
+
+                <ul>
+                    <li>🔹 **`src="URL"`** : Le chemin de l'image à afficher (relatif ou absolu).</li>
+                    <li>🔹 **`alt="description"`** : Texte alternatif si l'image ne peut pas être chargée (important pour l'accessibilité).</li>
+                    <li>🔹 **`width` et `height`** : Largeur et hauteur de l'image (en pixels).</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Exemple d'image</h3>
+                <pre>
+&lt;img src="../images/exemple.jpg" alt="Image d'exemple" width="300"&gt;
+                </pre>
+
+                <p>👉 **Résultat** :</p>
+                <img src="https://via.placeholder.com/300x200.png?text=Exemple+Image" alt="Image d'exemple" width="300">
+            </article>
+        </section>
+
+        <!-- Audio -->
+        <section>
+            <h2>2️⃣ Les fichiers audio (balise <code>&lt;audio&gt;</code>)</h2>
+            <p>La balise **`&lt;audio&gt;`** permet d'ajouter un **lecteur audio** sur la page. Elle prend en charge des formats de fichiers comme **.mp3**, **.ogg** et **.wav**.</p>
+
+            <article>
+                <h3>Structure de la balise</h3>
+                <pre>
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Votre navigateur ne supporte pas la balise audio.
+&lt;/audio&gt;
+                </pre>
+
+                <ul>
+                    <li>🔹 **`controls`** : Affiche les contrôles (lecture, pause, etc.).</li>
+                    <li>🔹 **`source`** : Définit le chemin du fichier audio et son type.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Exemple d'audio</h3>
+                <pre>
+&lt;audio controls&gt;
+  &lt;source src="../audio/musique.mp3" type="audio/mpeg"&gt;
+  Votre navigateur ne supporte pas la balise audio.
+&lt;/audio&gt;
+                </pre>
+
+                <p>👉 **Résultat** :</p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas la balise audio.
+                </audio>
+            </article>
+        </section>
+
+        <!-- Vidéos -->
+        <section>
+            <h2>3️⃣ Les vidéos (balise <code>&lt;video&gt;</code>)</h2>
+            <p>La balise **`&lt;video&gt;`** permet d'ajouter un **lecteur vidéo** sur la page. Elle prend en charge des formats comme **.mp4**, **.webm** et **.ogg**.</p>
+
+            <article>
+                <h3>Structure de la balise</h3>
+                <pre>
+&lt;video controls width="500"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Votre navigateur ne supporte pas la balise vidéo.
+&lt;/video&gt;
+                </pre>
+
+                <ul>
+                    <li>🔹 **`controls`** : Affiche les contrôles (lecture, pause, plein écran, etc.).</li>
+                    <li>🔹 **`width`** : Largeur de la vidéo (en pixels).</li>
+                    <li>🔹 **`source`** : Définit le chemin du fichier vidéo et son type.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Exemple de vidéo</h3>
+                <pre>
+&lt;video controls width="500"&gt;
+  &lt;source src="../videos/exemple.mp4" type="video/mp4"&gt;
+  Votre navigateur ne supporte pas la balise vidéo.
+&lt;/video&gt;
+                </pre>
+
+                <p>👉 **Résultat** :</p>
+                <video controls width="500">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+            </article>
+        </section>
+
+        <!-- Exercice pratique -->
+        <section>
+            <h2>4️⃣ Exercice pratique</h2>
+            <p>Créez une nouvelle page **media.html** avec les consignes suivantes :</p>
+            <ul>
+                <li>1️⃣ Ajoutez une **image** de votre choix avec l'attribut **alt**.</li>
+                <li>2️⃣ Ajoutez un **fichier audio** de votre choix (ou utilisez un fichier audio public en ligne).</li>
+                <li>3️⃣ Ajoutez une **vidéo** de votre choix (ou utilisez une URL de vidéo publique).</li>
+            </ul>
+            <p>➡️ Ouvrez la page dans le navigateur et testez les médias !</p>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>5️⃣ Points à retenir</h2>
+            <ul>
+                <li>📌 La balise **`&lt;img&gt;`** est utilisée pour afficher des images.</li>
+                <li>📌 La balise **`&lt;audio&gt;`** permet d'intégrer des **fichiers audio** avec des contrôles.</li>
+                <li>📌 La balise **`&lt;video&gt;`** permet d'intégrer des **vidéos** avec des contrôles.</li>
+                <li>📌 Les attributs **`src`**, **`alt`**, **`controls`**, **`width`** et **`height`** sont essentiels pour configurer l'affichage des médias.</li>
+            </ul>
+        </section>
+        <a href="#top">
+            <button id="backToTop">
+                🔝 Retour en haut
+            </button>
+        </a>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

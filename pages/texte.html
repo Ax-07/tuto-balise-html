@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balises de texte en HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Les balises de texte en HTML</h1>
+        <nav><a href="../index.html">🏠 Accueil</a></nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Dans cette section, vous allez découvrir les balises utilisées pour afficher et styliser le **texte dans HTML**. Les balises de texte permettent de structurer le contenu visible de la page web.</p>
+        </section>
+
+        <!-- Les titres -->
+        <section>
+            <h2>1️⃣ Les balises de titre</h2>
+            <p>Les balises de titre permettent de structurer la hiérarchie de la page. Il existe 6 niveaux de titres, de <code>&lt;h1&gt;</code> (le plus important) à <code>&lt;h6&gt;</code> (le moins important).</p>
+
+            <article>
+                <h3>Exemple :</h3>
+                <pre>
+                    &lt;h1&gt;Titre de niveau 1&lt;/h1&gt;
+                    &lt;h2&gt;Titre de niveau 2&lt;/h2&gt;
+                    &lt;h3&gt;Titre de niveau 3&lt;/h3&gt;
+                    &lt;h4&gt;Titre de niveau 4&lt;/h4&gt;
+                    &lt;h5&gt;Titre de niveau 5&lt;/h5&gt;
+                    &lt;h6&gt;Titre de niveau 6&lt;/h6&gt;
+                </pre>
+            </article>
+
+            <p>👉 **Bonnes pratiques** :
+                <ul>
+                    <li>Utilisez **une seule balise `&lt;h1&gt;`** par page, car c'est le titre principal de la page.</li>
+                    <li>Utilisez les autres titres (**`&lt;h2&gt;` à `&lt;h6&gt;`**) pour structurer vos sections de contenu.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- Les paragraphes -->
+        <section>
+            <h2>2️⃣ La balise de paragraphe</h2>
+            <p>Pour afficher du texte normal, on utilise la balise **`&lt;p&gt;`**. Chaque paragraphe de texte doit être contenu dans une balise `<p>`.</p>
+
+            <article>
+                <h3>Exemple :</h3>
+                <pre>
+                    &lt;p&gt;Ceci est un paragraphe de texte.&lt;/p&gt;
+                    &lt;p&gt;Et ceci est un autre paragraphe.&lt;/p&gt;
+                </pre>
+            </article>
+
+            <p>👉 **Bonnes pratiques** :
+                <ul>
+                    <li>Utilisez la balise **`&lt;p&gt;`** pour structurer les paragraphes.</li>
+                    <li>Ne mettez pas tout le texte dans une seule balise **`&lt;p&gt;`**, divisez-le en plusieurs paragraphes.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- Les balises de mise en forme -->
+        <section>
+            <h2>3️⃣ Les balises de mise en forme</h2>
+            <p>Ces balises permettent de mettre en forme le texte, comme le rendre **gras**, **italique**, ou **souligné**.</p>
+
+            <article>
+                <h3>Les principales balises :</h3>
+                <ul>
+                    <li><code>&lt;strong&gt;</code> : Met le texte en **gras** (important sémantiquement).</li>
+                    <li><code>&lt;em&gt;</code> : Met le texte en **italique** (pour insister sur un mot).</li>
+                    <li><code>&lt;b&gt;</code> : Met le texte en **gras** (mais sans importance sémantique).</li>
+                    <li><code>&lt;i&gt;</code> : Met le texte en **italique** (sans importance sémantique).</li>
+                    <li><code>&lt;u&gt;</code> : **Souligne** le texte (rarement utilisé).</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Exemple :</h3>
+                <pre>
+                    &lt;p&gt;Texte en &lt;strong&gt;gras&lt;/strong&gt;.&lt;/p&gt;
+                    &lt;p&gt;Texte en &lt;em&gt;italique&lt;/em&gt;.&lt;/p&gt;
+                    &lt;p&gt;Texte en &lt;b&gt;gras (non sémantique)&lt;/b&gt;.&lt;/p&gt;
+                    &lt;p&gt;Texte en &lt;u&gt;souligné&lt;/u&gt;.&lt;/p&gt;
+                </pre>
+            </article>
+        </section>
+
+        <!-- Les citations -->
+        <section>
+            <h2>4️⃣ Les citations et les citations longues</h2>
+
+            <article>
+                <h3>La balise <code>&lt;blockquote&gt;</code></h3>
+                <p>Utilisez la balise **`&lt;blockquote&gt;`** pour citer des paragraphes entiers.</p>
+
+                <pre>
+                    &lt;blockquote&gt;
+                    Le HTML est le langage de base pour créer des pages Web. 
+                    Il est utilisé pour structurer le contenu.
+                    &lt;/blockquote&gt;
+                </pre>
+            </article>
+
+            <article>
+                <h3>La balise <code>&lt;q&gt;</code></h3>
+                <p>Utilisez la balise **`&lt;q&gt;`** pour citer une petite phrase au sein d'un paragraphe.</p>
+
+                <pre>
+                    &lt;p&gt;Le professeur a dit : &lt;q&gt;N'abandonnez jamais !&lt;/q&gt;&lt;/p&gt;
+                </pre>
+            </article>
+        </section>
+
+        <!-- Exercice -->
+        <section>
+            <h2>5️⃣ Exercice pratique</h2>
+            <p>Créez une nouvelle page **texte.html** avec les consignes suivantes :</p>
+            <ul>
+                <li>1️⃣ Ajoutez un titre principal en **`&lt;h1&gt;`** : "Ma première page de texte".</li>
+                <li>2️⃣ Ajoutez trois **paragraphes** avec des informations personnelles (loisirs, travail, etc.).</li>
+                <li>3️⃣ Mettez un mot en **gras** et un autre en **italique** dans chaque paragraphe.</li>
+                <li>4️⃣ Ajoutez une **citation** avec **`&lt;blockquote&gt;`** à la fin de la page.</li>
+            </ul>
+            <p>➡️ Ouvrez le fichier dans le navigateur et vérifiez le résultat !</p>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>6️⃣ Points à retenir</h2>
+            <ul>
+                <li>📌 Les **titres** vont de `&lt;h1&gt;` (le plus important) à `&lt;h6&gt;` (le moins important).</li>
+                <li>📌 Les **paragraphes** sont créés avec la balise **`&lt;p&gt;`**.</li>
+                <li>📌 Les **mises en forme** se font avec `&lt;strong&gt;`, `&lt;em&gt;`, `&lt;b&gt;`, `&lt;i&gt;`, et `&lt;u&gt;`.</li>
+                <li>📌 Les **citations** utilisent **`&lt;blockquote&gt;`** pour des longs paragraphes et **`&lt;q&gt;`** pour les petites citations.</li>
+            </ul>
+        </section>
+        <a href="#top">
+            <button id="backToTop">
+                🔝 Retour en haut
+            </button>
+        </a>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

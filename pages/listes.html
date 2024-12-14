@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les listes en HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Les listes en HTML</h1>
+        <nav><a href="../index.html">🏠 Accueil</a></nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Les **listes HTML** permettent de regrouper des éléments de manière organisée. Il existe 3 types de listes principales en HTML :</p>
+            <ul>
+                <li>🔹 **Listes non ordonnées** (balise <code>&lt;ul&gt;</code>)</li>
+                <li>🔹 **Listes ordonnées** (balise <code>&lt;ol&gt;</code>)</li>
+                <li>🔹 **Listes de définition** (balise <code>&lt;dl&gt;</code>)</li>
+            </ul>
+        </section>
+
+        <!-- Listes non ordonnées -->
+        <section>
+            <h2>1️⃣ Les listes non ordonnées</h2>
+            <p>Les **listes non ordonnées** affichent des éléments sous forme de **puces**. Chaque élément de la liste est contenu dans une balise **`&lt;li&gt;`** (élément de liste).</p>
+
+            <article>
+                <h3>Exemple :</h3>
+                <pre>
+                    &lt;ul&gt;
+                        &lt;li&gt;HTML&lt;/li&gt;
+                        &lt;li&gt;CSS&lt;/li&gt;
+                        &lt;li&gt;JavaScript&lt;/li&gt;
+                    &lt;/ul&gt;
+                </pre>
+
+                <p>👉 Ce code affiche :</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+
+            <p>👉 **Bonnes pratiques** :
+                <ul>
+                    <li>Utilisez les listes **non ordonnées** pour les contenus **sans ordre particulier**.</li>
+                    <li>Chaque élément de liste doit être dans une balise **`&lt;li&gt;`**.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- Listes ordonnées -->
+        <section>
+            <h2>2️⃣ Les listes ordonnées</h2>
+            <p>Les **listes ordonnées** affichent des éléments avec des **numéros** ou des **lettres**. Chaque élément est contenu dans une balise **`&lt;li&gt;`** (élément de liste).</p>
+
+            <article>
+                <h3>Exemple :</h3>
+                <pre>
+                    &lt;ol&gt;
+                        &lt;li&gt;Préparer les ingrédients&lt;/li&gt;
+                        &lt;li&gt;Cuire au four pendant 20 min&lt;/li&gt;
+                        &lt;li&gt;Laisser refroidir&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre>
+
+                <p>👉 Ce code affiche :</p>
+                <ol>
+                    <li>Préparer les ingrédients</li>
+                    <li>Cuire au four pendant 20 min</li>
+                    <li>Laisser refroidir</li>
+                </ol>
+            </article>
+
+            <p>👉 **Bonnes pratiques** :
+                <ul>
+                    <li>Utilisez les listes **ordonnées** pour les étapes ou **instructions chronologiques**.</li>
+                    <li>Chaque élément de liste doit être dans une balise **`&lt;li&gt;`**.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- Listes imbriquées -->
+        <section>
+            <h2>3️⃣ Les listes imbriquées</h2>
+            <p>Les **listes imbriquées** permettent de créer des sous-listes à l'intérieur d'une liste principale.</p>
+
+            <article>
+                <h3>Exemple :</h3>
+                <pre>
+                    &lt;ul&gt;
+                    &lt;li&gt;HTML&lt;/li&gt;
+                    &lt;li&gt;CSS
+                        &lt;ul&gt;
+                            &lt;li&gt;Flexbox&lt;/li&gt;
+                            &lt;li&gt;Grid&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;JavaScript&lt;/li&gt;
+                    &lt;/ul&gt;
+                </pre>
+
+                <p>👉 Ce code affiche :</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS
+                        <ul>
+                            <li>Flexbox</li>
+                            <li>Grid</li>
+                        </ul>
+                    </li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Listes de définition -->
+        <section>
+            <h2>4️⃣ Les listes de définition</h2>
+            <p>Les **listes de définition** sont utilisées pour définir des termes, des concepts ou des définitions. Elles utilisent 3 balises :</p>
+
+            <ul>
+                <li>🔹 **`&lt;dl&gt;`** : Définit la liste de définition.</li>
+                <li>🔹 **`&lt;dt&gt;`** : Définit le terme à expliquer.</li>
+                <li>🔹 **`&lt;dd&gt;`** : Définit la description du terme.</li>
+            </ul>
+
+            <article>
+                <h3>Exemple :</h3>
+                <pre>
+                    &lt;dl&gt;
+                        &lt;dt&gt;HTML&lt;/dt&gt;
+                        &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+
+                        &lt;dt&gt;CSS&lt;/dt&gt;
+                        &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+
+                        &lt;dt&gt;JavaScript&lt;/dt&gt;
+                        &lt;dd&gt;Langage de programmation pour le web&lt;/dd&gt;
+                    &lt;/dl&gt;
+                </pre>
+
+                <p>👉 Ce code affiche :</p>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Langage de programmation pour le web</dd>
+                </dl>
+            </article>
+        </section>
+
+        <!-- Exercice pratique -->
+        <section>
+            <h2>5️⃣ Exercice pratique</h2>
+            <p>Créez une nouvelle page **listes.html** avec les consignes suivantes :</p>
+            <ul>
+                <li>1️⃣ Créez une **liste non ordonnée** avec 5 de vos **loisirs**.</li>
+                <li>2️⃣ Créez une **liste ordonnée** pour les **étapes de préparation d'une recette**.</li>
+                <li>3️⃣ Imbriquez une liste dans une **liste principale**.</li>
+                <li>4️⃣ Créez une **liste de définition** pour définir 3 **termes techniques** de votre choix.</li>
+            </ul>
+            <p>➡️ Ouvrez la page dans le navigateur et vérifiez le résultat !</p>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>6️⃣ Points à retenir</h2>
+            <ul>
+                <li>📌 Utilisez **`&lt;ul&gt;`** pour les **listes non ordonnées** (avec des puces).</li>
+                <li>📌 Utilisez **`&lt;ol&gt;`** pour les **listes ordonnées** (avec des numéros ou lettres).</li>
+                <li>📌 Les **listes imbriquées** permettent de créer des sous-listes.</li>
+                <li>📌 Les **listes de définition** utilisent **`&lt;dl&gt;`**, **`&lt;dt&gt;`** et **`&lt;dd&gt;`**.</li>
+            </ul>
+        </section>
+        <a href="#top">
+            <button id="backToTop">
+                🔝 Retour en haut
+            </button>
+        </a>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

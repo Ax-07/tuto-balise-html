@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure de base d'une page HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>La structure de base d'une page HTML</h1>
+        <nav><a href="../index.html">🏠 Accueil</a></nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Dans ce chapitre, nous allons apprendre à structurer correctement une page HTML. Vous découvrirez les balises essentielles et leur rôle dans la construction d'une page Web.</p>
+        </section>
+
+        <!-- La structure de base -->
+        <section>
+            <h2>1️⃣ Structure de base d'une page HTML</h2>
+            <p>Voici le squelette de base d'une page HTML :</p>
+
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="fr"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;title&gt;Titre de la page&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Bienvenue sur ma page&lt;/h1&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+
+            <p>👉 Ce squelette est **obligatoire** pour que le navigateur comprenne qu'il s'agit d'un document HTML5.</p>
+        </section>
+
+        <!-- Description des balises -->
+        <section>
+            <h2>2️⃣ Explications des balises essentielles</h2>
+
+            <article>
+                <h3>1. La balise <code>&lt;!DOCTYPE html&gt;</code></h3>
+                <p>Cette balise annonce au navigateur qu'il s'agit d'un document HTML5. Cette déclaration doit être **au tout début** du fichier HTML.</p>
+            </article>
+
+            <article>
+                <h3>2. La balise <code>&lt;html&gt;</code></h3>
+                <p>La balise <code>&lt;html&gt;</code> est la balise racine qui **englobe tout le contenu** de la page. L'attribut <code>lang="fr"</code> indique que le contenu de la page est en français, ce qui aide au référencement SEO et à l'accessibilité.</p>
+            </article>
+
+            <article>
+                <h3>3. La balise <code>&lt;head&gt;</code></h3>
+                <p>Le **&lt;head&gt;** contient les **informations invisibles** de la page, comme le titre, la langue et les liens vers des ressources externes (CSS, polices, etc.).</p>
+
+                <ul>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code> : Indique au navigateur d'utiliser le format UTF-8 (pour les accents et caractères spéciaux).</li>
+                    <li><code>&lt;title&gt;</code> : Définit le **titre de la page** (visible dans l'onglet du navigateur).</li>
+                    <li><code>&lt;link&gt;</code> : Permet de lier des fichiers CSS.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>4. La balise <code>&lt;body&gt;</code></h3>
+                <p>La balise **&lt;body&gt;** contient **tout le contenu visible** de la page : titres, paragraphes, images, vidéos, etc. Ce que l'utilisateur voit à l'écran se trouve toujours dans le **&lt;body&gt;**.</p>
+            </article>
+
+        </section>
+
+        <!-- Bonnes pratiques -->
+        <section>
+            <h2>3️⃣ Bonnes pratiques</h2>
+            <ul>
+                <li>🔹 Toujours commencer avec <code>&lt;!DOCTYPE html&gt;</code> pour indiquer au navigateur qu'il s'agit d'un document HTML5.</li>
+                <li>🔹 Ajoutez toujours **lang="fr"** dans la balise <code>&lt;html&gt;</code> pour indiquer la langue du contenu.</li>
+                <li>🔹 Mettez le titre de la page dans la balise <code>&lt;title&gt;</code> car il apparaît dans l'onglet du navigateur.</li>
+                <li>🔹 Évitez de mélanger du contenu **visuel** dans la balise **&lt;head&gt;** (placez tout dans le **&lt;body&gt;**).</li>
+            </ul>
+        </section>
+
+        <!-- Exercice -->
+        <section>
+            <h2>4️⃣ Exercice pratique</h2>
+            <p>Essayez de créer votre propre page HTML en respectant les consignes suivantes :</p>
+            <ul>
+                <li>1️⃣ Créez un fichier **page.html**.</li>
+                <li>2️⃣ Ajoutez le **squelette de base** que nous avons vu plus haut.</li>
+                <li>3️⃣ Ajoutez un titre de page personnalisé dans la balise **&lt;title&gt;**.</li>
+                <li>4️⃣ Ajoutez un titre principal dans le **&lt;body&gt;** (par exemple, "Ma première page HTML").</li>
+            </ul>
+            <p>➡️ Une fois le fichier prêt, ouvrez-le dans votre navigateur et vérifiez le résultat !</p>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>5️⃣ Points à retenir</h2>
+            <ul>
+                <li>📌 La balise <code>&lt;!DOCTYPE html&gt;</code> est obligatoire en début de fichier.</li>
+                <li>📌 La balise <code>&lt;html&gt;</code> est la racine du document.</li>
+                <li>📌 La balise <code>&lt;head&gt;</code> contient les métadonnées, et la balise <code>&lt;body&gt;</code> contient le contenu visible.</li>
+            </ul>
+        </section>
+        <a href="#top">
+            <button id="backToTop">
+                🔝 Retour en haut
+            </button>
+        </a>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

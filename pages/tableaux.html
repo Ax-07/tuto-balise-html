@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux en HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Les tableaux en HTML</h1>
+        <nav><a href="../index.html">🏠 Accueil</a></nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Les **tableaux HTML** permettent d'organiser des **données sous forme de grille** (lignes et colonnes).
+                Ils sont très utilisés pour afficher des **informations tabulaires** (listes de produits, résultats de
+                tests, etc.).</p>
+        </section>
+
+        <!-- La structure de base d'un tableau -->
+        <section>
+            <h2>1️⃣ Structure de base d'un tableau</h2>
+            <p>Un tableau HTML est défini avec la balise **`&lt;table&gt;`**.
+                Il est composé de **lignes** (**`&lt;tr&gt;`**) et de **cellules** (**`&lt;td&gt;`** ou
+                **`&lt;th&gt;`**).</p>
+
+            <article>
+                <h3>Exemple de tableau simple</h3>
+                <pre>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Nom&lt;/th&gt;
+                        &lt;th&gt;Âge&lt;/th&gt;
+                        &lt;th&gt;Ville&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Alice&lt;/td&gt;
+                        &lt;td&gt;25&lt;/td&gt;
+                        &lt;td&gt;Paris&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Bob&lt;/td&gt;
+                        &lt;td&gt;30&lt;/td&gt;
+                        &lt;td&gt;Lyon&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                </pre>
+
+                <p>👉 **Résultat** :</p>
+                <table>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Âge</th>
+                        <th>Ville</th>
+                    </tr>
+                    <tr>
+                        <td>Alice</td>
+                        <td>25</td>
+                        <td>Paris</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>30</td>
+                        <td>Lyon</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <!-- Les balises importantes des tableaux -->
+        <section>
+            <h2>2️⃣ Les balises essentielles des tableaux</h2>
+
+            <article>
+                <h3>1. Balise <code>&lt;table&gt;</code></h3>
+                <p>Cette balise contient **tout le tableau**.</p>
+            </article>
+
+            <article>
+                <h3>2. Balise <code>&lt;tr&gt;</code></h3>
+                <p>La balise **`&lt;tr&gt;`** représente **une ligne du tableau**.</p>
+            </article>
+
+            <article>
+                <h3>3. Balise <code>&lt;th&gt;</code></h3>
+                <p>La balise **`&lt;th&gt;`** représente **un en-tête de colonne**. Le texte est **gras et centré par
+                    défaut**.</p>
+            </article>
+
+            <article>
+                <h3>4. Balise <code>&lt;td&gt;</code></h3>
+                <p>La balise **`&lt;td&gt;`** représente **une cellule**. Elle contient les **données du tableau**.</p>
+            </article>
+        </section>
+
+        <!-- Sections avancées : thead, tbody, tfoot -->
+        <section>
+            <h2>3️⃣ Sections avancées : <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> et
+                <code>&lt;tfoot&gt;</code></h2>
+
+            <article>
+                <h3>1. Balise <code>&lt;thead&gt;</code></h3>
+                <p>Cette balise contient les **en-têtes de colonnes** (les titres de chaque colonne).</p>
+            </article>
+
+            <article>
+                <h3>2. Balise <code>&lt;tbody&gt;</code></h3>
+                <p>Cette balise contient le **corps du tableau** (les données du tableau).</p>
+            </article>
+
+            <article>
+                <h3>3. Balise <code>&lt;tfoot&gt;</code></h3>
+                <p>Cette balise contient **le pied de tableau** (par exemple, les totaux ou les notes de bas de page).
+                </p>
+
+                <pre>
+                    &lt;table&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                        &lt;th&gt;Produit&lt;/th&gt;
+                        &lt;th&gt;Prix&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Chaise&lt;/td&gt;
+                        &lt;td&gt;50€&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Table&lt;/td&gt;
+                        &lt;td&gt;100€&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                    &lt;tfoot&gt;
+                        &lt;tr&gt;
+                        &lt;td&gt;Total&lt;/td&gt;
+                        &lt;td&gt;150€&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tfoot&gt;
+                    &lt;/table&gt;
+                </pre>
+            </article>
+        </section>
+
+        <!-- Exercice pratique -->
+        <section>
+            <h2>4️⃣ Exercice pratique</h2>
+            <p>Créez une nouvelle page **tableaux.html** avec les consignes suivantes :</p>
+            <ul>
+                <li>1️⃣ Créez un tableau pour afficher une liste de **5 employés** avec les colonnes : **Nom**,
+                    **Poste**, **Âge**, **Ville**.</li>
+                <li>2️⃣ Ajoutez un **thead**, **tbody** et **tfoot**.</li>
+                <li>3️⃣ Dans le **tfoot**, affichez le nombre total d'employés.</li>
+            </ul>
+            <p>➡️ Ouvrez la page dans le navigateur et vérifiez le résultat !</p>
+        </section>
+
+        <!-- Points à retenir -->
+        <section>
+            <h2>5️⃣ Points à retenir</h2>
+            <ul>
+                <li>📌 **`&lt;table&gt;`** représente le tableau principal.</li>
+                <li>📌 **`&lt;tr&gt;`** représente une ligne.</li>
+                <li>📌 **`&lt;th&gt;`** est utilisé pour les titres de colonne.</li>
+                <li>📌 **`&lt;td&gt;`** représente les cellules de données.</li>
+                <li>📌 **`&lt;thead&gt;`**, **`&lt;tbody&gt;`**, et **`&lt;tfoot&gt;`** permettent d'organiser le
+                    contenu du tableau.</li>
+            </ul>
+        </section>
+        <a href="#top">
+            <button id="backToTop">
+                🔝 Retour en haut
+            </button>
+        </a>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 - Tutoriel HTML. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
